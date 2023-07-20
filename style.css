@@ -1,0 +1,132 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', Arial;
+    box-sizing: border-box;
+}
+.header{
+    width: 100%;
+    height: 100vh;
+    background: rgb(194, 194, 194);
+    padding-left: 11%;
+    padding-right: 8%;
+    position: relative;
+
+    background-image: url(images/pick\ and\ roll.png);
+    background-size: 40%;
+    background-repeat: no-repeat;
+    background-position: 92% 100%;
+
+}
+.top-nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 30px 0 15px;
+    border-bottom: 1px solid #222;
+}
+.top-nav ul li{
+    list-style: none;
+    display: inline-block;
+    margin-right: 30px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+.top-nav ul li a{
+    text-decoration: none;
+    color: rgb(40, 40, 40);
+    font-size: 13px;
+   
+    color: #444;
+    border: 0;
+    outline: 0;
+    border-radius: 20px;
+    padding: 5px 15px;
+    cursor: pointer;
+}
+.top-nav button {
+    background: #ffff;
+    color: #222;
+    border: 0;
+    outline: 0;
+    border-radius: 30px;
+    padding: 10px 20px;
+    cursor: pointer;
+}
+.side-nav{
+    position: fixed;
+    /*background: cornflowerblue;*/
+    left: 0;
+    top: 0;
+    width: 100px;
+    height: 100vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+    padding: 50px 0;
+    background: linear-gradient(#1b1b1b, #5c5c5c, #666, #222);
+    background-size: 100% 500%;
+    background-position: 0 40%;
+}
+.side-nav:hover{
+    animation: backcolor 20s linear infinite reverse;
+}
+@keyframes backcolor{
+    0%{
+        background-position: 0 0%;
+    }
+    100%{
+        background-position: 0 400%;
+    }
+
+}
+.side-nav .logo{
+    width: 90px;
+    cursor: pointer;
+}
+.side-nav a{
+    text-decoration: none;
+    color: aliceblue;
+    transform: rotate(-90deg) translateX(50%);
+    width: max-content;
+}
+.text-box{
+    margin-top: 20%;
+    font-size: 18px;
+    color: #222;
+    
+}
+
+.text-box p{
+    font-style: italic;
+    font-size: larger;
+    
+}
+
+.text-box h1{
+    font-weight:500;
+    font-size:100px;
+    max-width:550;
+    line-height:0.9;
+    margin-top:10px;
+    margin-bottom: 30px;
+    font-family:'Poppins'
+}
+.span {
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    color: rgb(74, 74, 74);
+}
+.text-box .icon{
+    background: #1b1b1b;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.text-box .icon img{
+    width: 30px;
+
+}
